@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "text": "buy the new Soundrops album"
+    },
+    {
+      "id": "2",
+      "text": "call the boss"
+    },
+    {
+      "id": "3",
+      "text": "go to the cinema"
+    }
+  ]
+}

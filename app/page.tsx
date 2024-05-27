@@ -1,9 +1,17 @@
-export default function Home() {
+import { getAllTodos } from "../api";
+import AddTask from "./components/AddTask";
+import TodoList from "./components/TodoList";
+
+
+export default async function Home() {
+  const tasks = await getAllTodos();
   return (
     <main className="max-w-4xl mx-auto mt-4">
       <div className="text-center my-5 flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Welcome to Todo App</h1>
+        <h1 className="text-2xl font-bold">The Round Triangle TODO App</h1>
+        <AddTask />
       </div>
+      <TodoList tasks={tasks}/>
     </main>
   );
 }

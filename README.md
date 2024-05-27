@@ -6,18 +6,26 @@ Source: [Create a To-Do App with Next.js 13: Learn CRUD Operations and Tailwind 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Uses `json-server` to create a fake API endpoint based on a .json file. Note that a script:
+
+```bash
+json-server --watch data/todos.json --port 3001
+```
+
+has been created in `package.json`.
+
 ## Getting Started
 
-First, run the development server:
+First, run the backend:
+
+```bash
+npm json-server
+```
+
+Then, run the frontend
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
